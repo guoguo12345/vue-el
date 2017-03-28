@@ -1,5 +1,4 @@
 // http://eslint.org/docs/user-guide/configuring
-
 module.exports = {
   root: true,
   parser: 'babel-eslint',
@@ -26,6 +25,9 @@ module.exports = {
     // 如果没分号就报错
     'semi': ['error','always'],
     //忽略缩进问题
-    'indent': 0
+    'indent': 0,
+    "comma-dangle": [2, "never"],
+    "no-multiple-empty-lines": [1, {"max": 2}],
+    "no-tabs": "off"
   }
 }
