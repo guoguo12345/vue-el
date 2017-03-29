@@ -9,6 +9,9 @@ Vue.config.productionTip = false;
 import Goods from './components/goods/goods.vue';
 import Ratings from './components/ratings/ratings.vue';
 import Seller from './components/seller/seller.vue';
+// import './common/scss/index.scss';
+import VueResource from 'vue-resource';
+Vue.use(VueResource);
 const router = new VueRouter({
 	routes: [
 	{
@@ -25,8 +28,13 @@ const router = new VueRouter({
 		path: '/ratings',
 		name: 'ratings',
 		component: Ratings
+	},
+	{
+		path: '*',
+		redirect: '/goods'
 	}
-	]
+	],
+	linkActiveClass: 'active'
 });
 /* eslint-disable no-new */
 new Vue({

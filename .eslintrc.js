@@ -28,6 +28,7 @@ module.exports = {
     'indent': 0,
     "comma-dangle": [2, "never"],
     "no-multiple-empty-lines": [1, {"max": 2}],
-    "no-tabs": "off"
+    "no-tabs": "off",
+    "space-before-function-paren": 0
   }
 }
